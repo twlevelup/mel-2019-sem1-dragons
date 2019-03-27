@@ -7,11 +7,18 @@ describe('TeamPage', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#render', () => {
+ describe('#render', () => {
     it('should render my team page', () => {
       const page = new TeamPage();
       expect(page.render()).toContain("<h1>Made by:</h1>");
     });
+
+    it('should contain team members names', () => {
+      const page = new TeamPage();
+      expect(page.render()).toContain("Jishnu");
+      expect(page.render()).toContain("Ramesh");
+    });
   });
+
 
 });
