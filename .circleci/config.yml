@@ -19,7 +19,7 @@ jobs:
       - run: npm run build
       - add_ssh_keys:
           fingerprints:
-            - "7f:cd:95:07:88:c7:28:ec:f9:bb:bc:26:7b:1e:07:f9"
+            - "60:1c:38:cb:90:4d:2e:fc:7e:e7:ef:1e:3e:d6:ef:55"
       - run: npm run deploy
 
 workflows:
