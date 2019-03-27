@@ -8,4 +8,3 @@ This git repo contains all the code you need to prototype apps for the watch.
 
 The [wiki](https://github.com/twlevelup/watch_edition_gitpod/wiki) contains lots of useful documentation about what you need installed, continuous integration, your first commit and much more...
 
-// Ac was here
