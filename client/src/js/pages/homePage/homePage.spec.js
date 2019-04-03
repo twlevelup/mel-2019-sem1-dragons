@@ -34,6 +34,20 @@ describe('HomePage', () => {
     });
   });
 
+  describe('#faceButtonEvent', () => {
+    it('should take the user to the demo page', () => {
+      const props = {
+        navigate: () => { },
+      };
+
+      const page = new HomePage(props);
+      spyOn(page, 'navigate');
+
+      page.faceButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('shapeintropage');
+    });
+  });
+
   describe('#rightButtonEvent', () => {
     it('goes to contacts page', () => {
       const page = new HomePage();
@@ -72,7 +86,7 @@ describe('HomePage', () => {
 
       watchFace.innerHTML = page.render();
 
-      jest.spyOn(page,"getDateTime");
+      jest.spyOn(page, "getDateTime");
       page.updateTimeDisplay(page.getDateTime);
       expect(page.getDateTime).toHaveBeenCalledTimes(1);
     });
@@ -82,7 +96,7 @@ describe('HomePage', () => {
     it('updateTimeDisplays does not call clock-time if its not in the window', () => {
       const page = new HomePage();
 
-      jest.spyOn(page,"getDateTime");
+      jest.spyOn(page, "getDateTime");
       page.updateTimeDisplay(page.getDateTime);
       expect(page.getDateTime).toHaveBeenCalledTimes(0);
     });

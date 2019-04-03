@@ -1,2 +1,7 @@
 @import './styles/pages/home.css';
 @import 'map.css';
+
+.shapeIntro {
+    font-size: 30px;
+    color: red;
+}
