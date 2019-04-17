@@ -13,4 +13,9 @@ describe('The Shape Intro Page', () => {
             expect(page.render()).toContain('Welcome to build that shape');
         });
     });
+    describe('#faceButtonEvent', () => {
+        it('should navigate to the first game', () => {
+            expect(page.render()).toContain(button);
+        })
+    })
 });
