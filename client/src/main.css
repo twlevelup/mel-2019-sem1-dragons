@@ -1,6 +1,25 @@
 @import './styles/pages/home.css';
 @import 'map.css';
 
+div.screen{
+    padding-left: 0em;
+    font-family: OpenSans-Light;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+  
+  div#watch-face{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: block;
+    overflow: hidden;
+  }
+
 .shapeIntro {
     font-size: 30px;
     color: red;
