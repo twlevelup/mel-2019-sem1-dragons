@@ -44,7 +44,7 @@ describe('HomePage', () => {
       spyOn(page, 'navigate');
 
       page.faceButtonEvent();
-      exp;ect(page.navigate).toHaveBeenCalledWith('shapeintropage');
+      expect(page.navigate).toHaveBeenCalledWith('shapeintropage');
     });
   });
 
