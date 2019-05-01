@@ -6,7 +6,7 @@ class ShapeGame extends BasePage {
     pageDidLoad() {
         this.draw();
     }
-    
+
     draw() {
         var canvas = document.getElementById('canvas');
         if (canvas.getContext) {
@@ -16,6 +16,14 @@ class ShapeGame extends BasePage {
 
         }
     }
+
+
+
+  rightButtonEvent() {
+    this.navigate('correctAnswer');
+  }
+
+
 }
 
 module.exports = ShapeGame;

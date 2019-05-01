@@ -6,3 +6,14 @@ describe('#canvasExists', () => {
         expect(page.render()).toContain("<canvas id=\"canvas\"></canvas>");
     })
 })
+
+
+describe('#rightButtonEvent', () => {
+    it('goes to correct page', () => {
+      const page = new ShapeGame();
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('correctAnswer');
+    });
+  });

@@ -9,7 +9,7 @@ div.screen{
     letter-spacing: 1px;
     font-weight: normal;
   }
-  
+
   div#watch-face{
     height: 100%;
     position: absolute;
@@ -38,4 +38,12 @@ div.screen{
     left: 0;
     right: 0;
     border-radius: 4em;
+}
+
+
+.spike {
+
+margin-left: 115px;
+margin-top: 125px
+
 }

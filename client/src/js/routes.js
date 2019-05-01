@@ -4,6 +4,7 @@ const TeamPage = require('./pages/teamPage/teamPage');
 const FourOhFour = require('./pages/404Page/404Page');
 const ShapeIntroPage = require('./pages/shapeIntroPage/shapeIntroPage');
 const ShapeGame = require('./pages/shapeGame/shapeGame');
+const correctAnswer = require('./pages/correctAnswer/correctAnswer');
 
 module.exports = {
   '/': HomePage,
@@ -11,5 +12,6 @@ module.exports = {
   'team': TeamPage,
   '404': FourOhFour,
   'shapeintropage': ShapeIntroPage,
-  'shapeGame': ShapeGame
+  'shapeGame': ShapeGame,
+  'correctAnswer': correctAnswer
 };
