@@ -6,9 +6,16 @@ class ShapeGame extends BasePage {
     pageDidLoad() {
         this.draw();
     }
-    
+
     draw() {
         var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(150,50,50,50);
+
+        }
+        var rightShape = document.getElementById('rightShape');
         if (canvas.getContext) {
             var ctx = canvas.getContext('2d');
             ctx.fillStyle = "#FF0000";
