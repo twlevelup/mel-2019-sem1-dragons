@@ -44,10 +44,15 @@ div.screen{
 
 .spike {
 
-margin-left: 115px;
-margin-top: 125px
+margin-left: 100px;
+margin-top: 70px
 
 }
+
+#spike-text{
+  margin-left: 18px;
+}
+
 .shapeIntro {
     font-size: 30px;
     color: #fff;

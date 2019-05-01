@@ -1,22 +1,38 @@
 const BasePage = require('watch-framework').BasePage;
+const correct = require('../../../images/correctanswerImage.png');
 
 
 class correctAnswer extends BasePage {
 
 template = require('./correctAnswer.hbs');
 
+  pageWillLoad() {
+
+this.correct = correct;
+
+  }
+
   pageDidLoad() {
 
 
   this.timerCheck();
 
+
+
+
   }
+
+
+
+
+
+
 
 
 timerCheck() {
 
 
-      console.log("test");
+
     var counter = 5;
 
     var timer =  setInterval(function() {
