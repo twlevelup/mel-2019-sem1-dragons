@@ -4,65 +4,31 @@ const correct = require('../../../images/correctanswerImage.png');
 
 class correctAnswer extends BasePage {
 
-template = require('./correctAnswer.hbs');
+  template = require('./correctAnswer.hbs');
 
   pageWillLoad() {
-
-this.correct = correct;
-
+    this.correct = correct;
   }
 
   pageDidLoad() {
-
-
-  this.timerCheck();
-
-
-
-
+    this.timerCheck();
   }
 
-
-
-
-
-
-
-
-timerCheck() {
-
-
-
+  timerCheck() {
     var counter = 5;
-
-    var timer =  setInterval(function() {
-
-       counter -= 1;
-
+    var timer = setInterval(function () {
+      counter -= 1;
       if (counter === 0) {
-
-          clearInterval(timer);
-
+        clearInterval(timer);
       }
 
       if (counter >= 0) {
-
-          var item  = document.getElementById("spike-text");
-          item.innerHTML = counter;
-
+        var item = document.getElementById("spike-text");
+        item.innerHTML = counter;
       }
 
-    },1000);
-
-
-
-
+    }, 1000);
+  }
 }
-
-
-
-
-}
-
 
 module.exports = correctAnswer;
