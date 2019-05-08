@@ -59,7 +59,9 @@ timerCheck() {
 
 }
 
-
+  topButtonEventHold() {
+        this.navigate('shapeintropage');
+    }
 
 
 }

@@ -30,6 +30,13 @@ class ShapeGame extends BasePage {
     this.navigate('correctAnswer');
   }
 
+    topButtonEventHold() {
+        this.navigate('shapeintropage');
+    }
+
+  topButtonEventHold() {
+        this.navigate('shapeintropage');
+    }
 
 }
 
