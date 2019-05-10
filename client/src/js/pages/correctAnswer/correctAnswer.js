@@ -28,14 +28,10 @@ class correctAnswer extends BasePage {
       }
 
     },1000);
-
-
-
-
-}
+  }
 
   topButtonEventHold() {
-        this.navigate('shapeintropage');
+        this.navigate('shapeIntroPage');
     }
 
 }

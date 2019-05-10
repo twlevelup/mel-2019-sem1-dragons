@@ -1,31 +1,23 @@
 const BasePage = require('watch-framework').BasePage;
+const centerShape = require('../../../images/GameOne_WINNING.png');
+const leftShape = require('../../../images/TRIANGLE.png');
+const rightShape = require('../../../images/SQUARE.png');
+const bottomShape = require('../../../images/CIRCLE.png');
 
 class ShapeGame extends BasePage {
-    template = require('./shapeGame.hbs');
+  template = require('./shapeGame.hbs');
 
-    pageDidLoad() {
-        this.draw();
-    }
+  pageWillLoad() {
+    this.draw();
+  }
 
-    draw() {
-        var canvas = document.getElementById('canvas');
-        if (canvas.getContext) {
-            var ctx = canvas.getContext('2d');
-            ctx.fillStyle = "#FF0000";
-            ctx.fillRect(150,50,50,50);
-
-        }
-        var rightShape = document.getElementById('rightShape');
-        if (canvas.getContext) {
-            var ctx = canvas.getContext('2d');
-            ctx.fillStyle = "#FF0000";
-            ctx.fillRect(150,50,50,50);
-
-        }
-    }
-
-
-
+  draw() {
+    this.center = centerShape;
+    this.left = leftShape;
+    this.right = rightShape;
+    this.bottom = bottomShape; 
+  }
+    
   rightButtonEvent() {
       this.navigate('correctAnswer');
   }
@@ -34,14 +26,9 @@ class ShapeGame extends BasePage {
       this.navigate('wrongAnswer');
   }
 
-    topButtonEventHold() {
-        this.navigate('shapeintropage');
-    }
-
   topButtonEventHold() {
-        this.navigate('shapeintropage');
+      this.navigate('shapeIntroPage');
     }
-
 }
 
 module.exports = ShapeGame;

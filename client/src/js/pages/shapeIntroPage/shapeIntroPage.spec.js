@@ -11,7 +11,7 @@ describe('The Shape Intro Page', () => {
     describe('#render', () => {
         it('should contain the correct text', () => {
             const page = new ShapeIntroPage();
-            expect(page.render()).toContain('Welcome to build that shape');
+            expect(page.render()).toContain('Welcome to');
         });
     });
     // xdescribe('#faceButtonEvent', () => {

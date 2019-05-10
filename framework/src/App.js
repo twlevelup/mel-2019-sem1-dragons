@@ -19,6 +19,8 @@ module.exports = class App {
     this.notificationForm = new NotificationForm(notifications, this.render);
 
     this.watchFace = document.getElementById("watch-face");
+    this.shapeLayout = document.getElementById("shape-layout");
+
     this.leftButton = document.getElementById("button-left");
     this.rightButton = document.getElementById("button-right");
     this.topButton = document.getElementById("button-top");
@@ -159,6 +161,7 @@ module.exports = class App {
       ...props,
       navigate: this.navigate,
       watchFace: this.watchFace,
+      shapeLayout: this.shapeLayout,
     });
 
     this.currentView = view;

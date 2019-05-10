@@ -1,52 +1,9 @@
 @import './styles/pages/home.css';
 @import 'map.css';
 
-
-div.screen{
-    padding-left: 0em;
-    font-family: OpenSans-Light;
-    color: #fff;
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: normal;
-  }
-
-  div#watch-face{
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    display: block;
-    overflow: hidden;
-  }
-
-.shapeIntro {
-    font-size: 30px;
-    color: red;
-}
-
-#canvas {
-    padding: 0;
-    margin: auto;
-    border: 1px solid;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 4em;
-}
-
-
 .spike {
-
-margin-left: 100px;
-margin-top: 70px
-
+  margin-left: 60px;
+  margin-top: 50px
 }
 
 #spike-text{
@@ -54,7 +11,31 @@ margin-top: 70px
 }
 
 .shapeIntro {
-    font-size: 30px;
-    color: #fff;
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 0.40em;
+  top: 0.2em;
 }
 
+#centerImage{
+  position: absolute;
+  left: 6.30em;
+  top: 5.2em;
+}
+#leftImage{
+  position: absolute;
+  left: .0em;
+  top: 7.0em;
+}
+#rightImage{
+  position: absolute;
+  right: -.0em;
+  top: 7.0em;
+}
+#bottomImage{
+  position: absolute;
+  bottom: -.0em;
+  left: 7.8em;
+}
