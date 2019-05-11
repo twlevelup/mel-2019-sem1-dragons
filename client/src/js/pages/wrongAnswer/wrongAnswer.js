@@ -29,6 +29,10 @@ class wrongAnswer extends BasePage {
 
     }, 1000);
   }
+
+  topButtonEventHold() {
+    this.navigate('shapeintropage');
+  }
 }
 
 module.exports = wrongAnswer;

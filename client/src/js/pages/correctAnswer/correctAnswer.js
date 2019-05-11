@@ -27,12 +27,12 @@ class correctAnswer extends BasePage {
         item.innerHTML = counter;
       }
 
-    },1000);
+    }, 1000);
   }
 
   topButtonEventHold() {
-        this.navigate('shapeIntroPage');
-    }
+    this.navigate('shapeintropage');
+  }
 
 }
 
