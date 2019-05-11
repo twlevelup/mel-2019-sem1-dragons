@@ -18,7 +18,7 @@ class wrongAnswer extends BasePage {
 
   timerCheck( self) {
     var that = self;
-    var counter = 5;
+    var counter = 3;
     var timer = setInterval(function () {
       counter -= 1;
       if (counter === 0) {
