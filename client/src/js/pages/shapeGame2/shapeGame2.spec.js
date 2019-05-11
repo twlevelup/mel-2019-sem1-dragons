@@ -1,4 +1,4 @@
-const ShapeGame = require('./shapeGame');
+const ShapeGame = require('./shapeGame2');
 
 describe('#rightButtonEvent', () => {
     it('goes to correct page', () => {
