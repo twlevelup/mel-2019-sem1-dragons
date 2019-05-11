@@ -11,15 +11,21 @@ class correctAnswer extends BasePage {
   }
 
   pageDidLoad() {
-    this.timerCheck();
+    this.timerCheck(this);
   }
 
-  timerCheck() {
+  timerCheck(self) {
+    var that = self;
     var counter = 5;
+    
     var timer = setInterval(function () {
       counter -= 1;
       if (counter === 0) {
         clearInterval(timer);
+
+        that.navigate("shapeGame2");
+        
+        
       }
 
       if (counter >= 0) {

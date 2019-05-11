@@ -44,7 +44,6 @@ class BasePage {
 
   faceButtonEvent() {
   }
-
   // double clicks
   rightButtonEventDoubleClick() {
   }

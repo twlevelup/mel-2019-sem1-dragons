@@ -9,6 +9,7 @@ describe('routes', () => {
     expect(routes['404']).toBeDefined();
     expect(routes['shapeintropage']).toBeDefined();
     expect(routes['shapeGame']).toBeDefined();
+    expect(routes['shapeGame2']).toBeDefined();
     expect(routes['correctAnswer']).toBeDefined();
     expect(routes['wrongAnswer']).toBeDefined();
   });
